@@ -64,7 +64,9 @@ export const Projects = () => {
                                 key={index}
                                 title={project.title} 
                                 description={project.description} 
-                                imgUrl={project.imgUrl}
+                                imgUrl={project.imgUrl.map((img, i) => (
+                                  <img src={img} alt={`${img}`} key={i} /> // Removed redundancy
+                                ))}
                                 link={project.link}
                                 completed={project.completed}
                               />
@@ -86,7 +88,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="Background" /> {/* Alt updated */}
     </section>
-  )
+  );
 }

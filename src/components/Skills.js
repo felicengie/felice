@@ -41,39 +41,39 @@ export const Skills = () => {
                         <p>I'm proficient in the following programming languages/frameworks:</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={python} alt="logo" />
+                                <img src={python} alt="Python" />
                                 <h5>Python</h5>
                             </div>
                             <div className="item">
-                                <img src={react} alt="logo" />
+                                <img src={react} alt="React" />
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={tailwind} alt="logo" />
+                                <img src={tailwind} alt="Tailwind CSS" />
                                 <h5>Tailwind</h5>
                             </div>
                             <div className="item">
-                                <img src={c} alt="logo" />
+                                <img src={c} alt="C" />
                                 <h5>C</h5>
                             </div>
                             <div className="item">
-                                <img src={java} alt="logo" />
+                                <img src={java} alt="Java" />
                                 <h5>Java</h5>
                             </div>
                             <div className="item">
-                                <img src={javascript} alt="logo" />
-                                <h5>javascript</h5>
+                                <img src={javascript} alt="JavaScript" />
+                                <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={jupyter} alt="logo" />
+                                <img src={jupyter} alt="Jupyter Notebook" />
                                 <h5>Jupyter Notebook</h5>
                             </div>
                             <div className="item">
-                                <img src={node} alt="logo" />
+                                <img src={node} alt="Node.js" />
                                 <h5>Node.js</h5>
                             </div>
                             <div className="item">
-                                <img src={bootstrap} alt="logo" />
+                                <img src={bootstrap} alt="Bootstrap" />
                                 <h5>Bootstrap</h5>
                             </div>
                         </Carousel>
@@ -81,7 +81,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="Background" />
     </section>
   )
 }
