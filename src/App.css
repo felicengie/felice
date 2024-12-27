@@ -1,4 +1,4 @@
-/************ Custom Font ************/
+/* ========================================= CUSTOM FONT ========================================= */
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 
-/************ Default Css ************/
+/* ========================================= DEFAULT CSS ========================================= */
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar Css ************/
+/* ========================================= NAVBAR CSS ========================================= */
 nav.navbar {
   position: fixed;
   width: 100%;
@@ -232,7 +232,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/************ Banner Css ************/
+/* ========================================= BANNER CSS ========================================= */
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -302,7 +302,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/************ Skills Css ************/
+/* ========================================= SKILLS CSS ========================================= */
 .skill {
   padding: 0 0 50px 0;
   position: relative;
@@ -342,17 +342,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/* ========================================= PROJECT CSS ========================================= */
 .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
 }
+
 .project h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
   text-align: center;
 }
+
 .project p {
   color: #B8B8B8;
   font-size: 18px;
@@ -362,6 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -369,9 +372,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
+
 .project .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
+
 .project .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
@@ -386,35 +391,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
+
 .project .nav.nav-pills .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
 }
+
 .project .nav.nav-pills .nav-link.active::before {
-    width: 100% !important;
+  width: 100% !important;
 }
+
 .project .nav.nav-pills .nav-link.active {
-    border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
+
 .nav-link#projects-tabs-tab-first {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 55px 0px 0px 55px;
 }
+
 .nav-link#projects-tabs-tab-second {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+
 .proj {
   position: relative;
   min-height: 450px;
@@ -424,7 +436,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex: 1;
   margin-bottom: 24px;
   padding: 24px;
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)
+  background: linear-gradient(45deg, rgba(170, 54, 124, 1) 0%, #3d2c4e 50%, rgb(206, 59, 255) 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 6s ease infinite;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proj:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .proj-title {
@@ -433,6 +465,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: white;
   letter-spacing: 1px;
 }
+
 .proj-subtitle {
   font-weight: 400;
   font-size: 14px;
@@ -440,23 +473,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 12px;
 }
+
 .proj-img-container {
   position: relative;
   flex-direction: row;
   border-radius: 30px;
   margin-bottom: 12px;
+  transition: transform 0.3s ease;
 }
+
+/* Zoom effect for images on hover */
+.proj:hover .proj-img-container {
+  transform: scale(1.1);  /* Slightly zooms in the image */
+}
+
 .proj-img {
   margin-right: 6px;
   width: 10%;
   height: 10%;
   object-fit: contain;
 }
+
 .proj-link {
   font-size: 16px;
   text-decoration: underline;
   color: white;
 }
+
 .proj-link:hover {
   color: #F5A9E1;
   transition: 0.3s ease-in-out;
@@ -503,7 +546,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/* ========================================= PROJECTS CSS ========================================= */
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -575,7 +618,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
-/************ Footer Css ************/
+/* ========================================= FOOTER CSS ========================================= */
 .footer {
   padding: 20px 0 50px 0;
   background-color: black;

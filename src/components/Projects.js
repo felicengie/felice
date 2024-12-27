@@ -64,9 +64,7 @@ export const Projects = () => {
                                 key={index}
                                 title={project.title} 
                                 description={project.description} 
-                                imgUrl={project.imgUrl.map((img, i) => (
-                                  <img src={img} alt={`${img}`} key={i} /> // Removed redundancy
-                                ))}
+                                imgUrl={project.imgUrl}
                                 link={project.link}
                                 completed={project.completed}
                               />

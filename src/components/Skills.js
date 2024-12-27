@@ -3,6 +3,8 @@ import react from "../assets/img/react.svg";
 import tailwind from "../assets/img/tailwind.svg";
 import c from "../assets/img/c.svg";
 import java from "../assets/img/java.svg";
+import html from "../assets/img/html.svg";
+import csssvg from "../assets/img/css.svg";
 import javascript from "../assets/img/javascript.svg";
 import node from "../assets/img/node.svg";
 import bootstrap from "../assets/img/bootstrap.svg";
@@ -47,6 +49,14 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={react} alt="React" />
                                 <h5>React</h5>
+                            </div>
+                            <div className="item">
+                                <img src={html} alt="Html" />
+                                <h5>Html</h5>
+                            </div>
+                            <div className="item">
+                                <img src={csssvg} alt="Css" />
+                                <h5>CSS</h5>
                             </div>
                             <div className="item">
                                 <img src={tailwind} alt="Tailwind CSS" />
