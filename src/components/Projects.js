@@ -1,17 +1,11 @@
-// import c from "../assets/img/c.svg";
-// import arduino from "../assets/img/arduino.svg";
-// import java from "../assets/img/java.svg";
-// import fastapi from "../assets/img/fastapi.svg";
-// import tensorflow from "../assets/img/tensorflow.svg";
-
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import python from "../assets/img/python.svg";
 import html from "../assets/img/html.svg";
-import react from "../assets/img/css.svg";
+import css from "../assets/img/css.svg";
 import react from "../assets/img/react.svg";
-import react from "../assets/img/javascript.svg";
-import react from "../assets/img/node.svg";
+import javascript from "../assets/img/javascript.svg";
+import node from "../assets/img/node.svg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';

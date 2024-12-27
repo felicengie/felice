@@ -1,0 +1,14 @@
+# Node.js dependencies
+node_modules/
+
+# macOS system files
+.DS_Store
+
+# Build artifacts
+build/
+
+# Personal configurations
+.zshrc
+
+# Temporary files
+*.log
