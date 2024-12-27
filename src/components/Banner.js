@@ -61,7 +61,11 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
 
                 <h1>{`Hi, I'm`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Felice Chandra." ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I'm an undergraduate student in Computer Science at Stony Brook Universityl. I'm passionate in Data Engineering, Fullstack Development, and Machine Learning. I'm always eager to learn and take opportunities in new things, and I created this website to showcase the projects that I've done throughout my time of study.</p>
+                <p>
+                  I'm a curious and ambitious undergrad in Computer Science at Stony Brook University! 🚀 From Data Engineering to Fullstack Development and Machine Learning.
+                  🌍🔍 I'm always up for learning something new, taking on exciting challenges, and creating impactful projects. This website? It's my playground to share the cool things I've built and learned along the way. 
+                  Come explore and see what I've been up to! 
+                </p>
                   <button onClick={handleClick}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
