@@ -35,7 +35,7 @@ export const Projects = () => {
       completed: true,
     },
     {
-      title: "Braille Translator",
+      title: "From Coffee Machine to Machine Learning",
       description: "A machine learning project to assist a client in the NYC coffee shop industry in optimizing various facets of their business operations.",
       imgUrl: [python],
       link: "https://github.com/felicengie/coffeshops",
