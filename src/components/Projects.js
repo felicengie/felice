@@ -5,6 +5,7 @@ import html from "../assets/img/html.svg";
 import css from "../assets/img/css.svg";
 import react from "../assets/img/react.svg";
 import javascript from "../assets/img/javascript.svg";
+import tailwind from "../assets/img/tailwind.svg"
 import node from "../assets/img/node.svg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -40,6 +41,25 @@ export const Projects = () => {
       imgUrl: [python],
       link: "https://github.com/felicengie/coffeshops",
       completed: true,
+    },
+    {
+      title: "Big Back Voyage - Wolfie Edition",
+      description: "Big Back Voyage is like Akinator for food; just answer a few fun questions, and it picks the perfect nearby cuisine for you.",
+      link: "https://github.com/jkyc38/hopperhacksv2",
+      imgUrl: [react, css, javascript],
+      completed: true,
+    },
+    {
+      title: "Custom TCP Chat Protocol",
+      description: "A chat application (like messenger) that will allow users to transfer messages and a custom reliable transport protocol on top of UDP.",
+      imgUrl: [python],
+      completed: false,
+    },
+    {
+      title: "Lifetime Financial Planner",
+      description: "Financial planning software allows users to analyze the outcomes of their plans for investments, retirement age, and other financial decisions under various assumptions about the future.",
+      imgUrl: [react, html, css, javascript, tailwind],
+      completed: false,
     },
   ];
 

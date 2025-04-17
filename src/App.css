@@ -302,6 +302,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
+.header-image {
+  width: 350px;
+  height: auto;
+  margin-top: -90px;
+}
+
 /* ========================================= SKILLS CSS ========================================= */
 .skill {
   padding: 0 0 50px 0;
