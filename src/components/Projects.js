@@ -52,14 +52,16 @@ export const Projects = () => {
     {
       title: "Custom TCP Chat Protocol",
       description: "A chat application (like messenger) that will allow users to transfer messages and a custom reliable transport protocol on top of UDP.",
+      link: "https://github.com/felicengie/chat-application-tcp-udp",
       imgUrl: [python],
-      completed: false,
+      completed: true,
     },
     {
       title: "Lifetime Financial Planner",
       description: "Financial planning software allows users to analyze the outcomes of their plans for investments, retirement age, and other financial decisions under various assumptions about the future.",
+      link: "https://github.com/felicengie/StollerFanClub-LFP",
       imgUrl: [react, html, css, javascript, tailwind],
-      completed: false,
+      completed: true,
     },
   ];
 
