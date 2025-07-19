@@ -7,6 +7,9 @@ import react from "../assets/img/react.svg";
 import javascript from "../assets/img/javascript.svg";
 import tailwind from "../assets/img/tailwind.svg"
 import node from "../assets/img/node.svg";
+import flask from "../assets/img/flask.svg"
+import nextjs from "../assets/img/nextjs.svg"
+import openai from "../assets/img/openai.svg"
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -61,6 +64,13 @@ export const Projects = () => {
       description: "Financial planning software allows users to analyze the outcomes of their plans for investments, retirement age, and other financial decisions under various assumptions about the future.",
       link: "https://github.com/felicengie/StollerFanClub-LFP",
       imgUrl: [react, html, css, javascript, tailwind],
+      completed: true,
+    },
+    {
+      title: "Real Estate AI Chatbot",
+      description: "A multi-agent conversational AI system built for Okada & Company, transforming commercial property recommendations into a cinematic AI crime syndicate experience. The chatbot analyzes NYC real estate using financial, spatial, and quality-of-life (QoL) metrics. Powered by a Next.js frontend and Flask backend, the system features chat persistence, RAG-based responses, and distinct mafia-style agent personas for an engaging and informative user experience.",
+      link: "https://github.com/jkyc38/hackathonv2/tree/main",
+      imgUrl: [nextjs, flask, tailwind, python, openai],
       completed: true,
     },
   ];
